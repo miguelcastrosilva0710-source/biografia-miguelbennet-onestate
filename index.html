@@ -69,16 +69,30 @@
       font-size: 18px;
     }
 
-    /* CSS novo */
+    /* Aviso tipo "Importante" */
     .update-note {
-      margin-top: 20px;
-      padding: 12px 16px;
-      background: rgba(255, 255, 255, 0.08);
-      border-left: 4px solid #a855f7;
-      border-radius: 6px;
-      font-size: 14px;
-      color: #e5e5e5;
+      margin-top: 25px;
+      padding: 14px 18px;
+      background: linear-gradient(135deg, rgba(70,0,0,0.85), rgba(120,0,0,0.65));
+      border: 1px solid #ff4d4d;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255,0,0,0.4);
+      text-align: center;
+      animation: pulse 2.2s infinite ease-in-out;
     }
+
+    .update-note strong {
+      color: #ffb3b3;
+      font-size: 16px;
+      text-shadow: 0 0 6px rgba(255,0,0,0.5);
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 15px rgba(255,0,0,0.4); }
+      50% { box-shadow: 0 0 25px rgba(255,0,0,0.7); }
+      100% { box-shadow: 0 0 15px rgba(255,0,0,0.4); }
+    }
+
   </style>
 </head>
 <body>
@@ -122,6 +136,7 @@
         <div class="update-note">
           🔄 <strong>Informações atualizadas diariamente</strong>
         </div>
+
       </div>
 
     </div>
